@@ -26,7 +26,7 @@ function Home() {
           className="absolute inset-0 opacity-30"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=2000&q=70')",
+              "url('https://images.unsplash.com/photo-1767053853581-895341cd45d5?auto=format&fit=crop&w=2000&q=70')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -132,10 +132,10 @@ function Home() {
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            { name: "Engines & APU", img: "photo-1569629743817-70d8db6c323b" },
-            { name: "Avionics", img: "photo-1583573636289-c9f6f5f4ae12" },
-            { name: "Landing Gear", img: "photo-1474302770737-173ee21bab63" },
-            { name: "Airframe & Cabin", img: "photo-1436491865332-7a61a109cc05" },
+            { name: "Engines & APU", img: "photo-1643590161306-65599acaaea0" },
+            { name: "Avionics", img: "photo-1761813409593-f9e271cea56a" },
+            { name: "Landing Gear", img: "photo-1767868280594-ece600a8e0f4" },
+            { name: "Airframe & Cabin", img: "photo-1579376742184-93eea42703a9" },
           ].map((c) => (
             <Link
               key={c.name}

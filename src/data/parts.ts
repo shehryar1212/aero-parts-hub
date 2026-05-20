@@ -36,7 +36,7 @@ export const PARTS: Part[] = [
     category: "Engine", manufacturer: "CFM International", condition: "Overhauled",
     quantity: 8, price: 18450,
     compatibility: ["Boeing 737-700", "Boeing 737-800", "Boeing 737-900"],
-    image: img("photo-1569629743817-70d8db6c323b"),
+    image: img("photo-1767719618646-a1dc8ee165cb"),
   },
   {
     id: "p2", partNumber: "HON-GTCP131-9B", name: "APU GTCP131-9B Starter",
@@ -44,7 +44,7 @@ export const PARTS: Part[] = [
     category: "Engine", manufacturer: "Honeywell", condition: "Serviceable",
     quantity: 3, price: 32500,
     compatibility: ["Airbus A320 Family", "Boeing 737NG"],
-    image: img("photo-1540962351504-03099e0a754b"),
+    image: img("photo-1696238628662-e820babaf1e3"),
   },
   {
     id: "p3", partNumber: "COL-G7000-PFD", name: "Pro Line 21 Primary Flight Display",
@@ -52,7 +52,7 @@ export const PARTS: Part[] = [
     category: "Avionics", manufacturer: "Collins Aerospace", condition: "New",
     quantity: 12, price: 14200,
     compatibility: ["Bombardier CRJ700", "Bombardier CRJ900", "Embraer ERJ-145"],
-    image: img("photo-1583573636289-c9f6f5f4ae12"),
+    image: img("photo-1761619819201-9f47092ed3c0"),
   },
   {
     id: "p4", partNumber: "MSL-A320-MLG-04", name: "A320 Main Landing Gear Shock Strut",
@@ -60,7 +60,7 @@ export const PARTS: Part[] = [
     category: "Landing Gear", manufacturer: "Safran Landing Systems", condition: "Overhauled",
     quantity: 2, price: 86400,
     compatibility: ["Airbus A319", "Airbus A320", "Airbus A321"],
-    image: img("photo-1474302770737-173ee21bab63"),
+    image: img("photo-1650501359724-6f270cdabd43"),
   },
   {
     id: "p5", partNumber: "PARK-HYD-3030-22", name: "Hydraulic Pump Assembly 3000psi",
@@ -68,7 +68,7 @@ export const PARTS: Part[] = [
     category: "Hydraulics", manufacturer: "Parker Hannifin", condition: "New",
     quantity: 6, price: 9450,
     compatibility: ["Boeing 757", "Boeing 767"],
-    image: img("photo-1581093588401-fbb62a02f120"),
+    image: img("photo-1777430926729-39cd26d12ad0"),
   },
   {
     id: "p6", partNumber: "GAR-NAV4500-WAAS", name: "GNS 4500 WAAS Nav/Comm",
@@ -76,7 +76,7 @@ export const PARTS: Part[] = [
     category: "Avionics", manufacturer: "Garmin", condition: "New",
     quantity: 18, price: 7800,
     compatibility: ["Cessna 172", "Piper PA-28", "Cirrus SR22"],
-    image: img("photo-1559136555-9303baea8ebd"),
+    image: img("photo-1768554591368-292194a9f50c"),
   },
   {
     id: "p7", partNumber: "B737-WS-LE-117", name: "737 Wing Leading Edge Slat",
@@ -84,7 +84,7 @@ export const PARTS: Part[] = [
     category: "Airframe", manufacturer: "Boeing", condition: "Serviceable",
     quantity: 4, price: 24500,
     compatibility: ["Boeing 737-800"],
-    image: img("photo-1436491865332-7a61a109cc05"),
+    image: img("photo-1704964971139-c6cec37bb6bf"),
   },
   {
     id: "p8", partNumber: "GE-CF6-80C2-HPT", name: "CF6-80C2 HP Turbine Blade Set",
@@ -92,7 +92,7 @@ export const PARTS: Part[] = [
     category: "Engine", manufacturer: "GE Aviation", condition: "Overhauled",
     quantity: 1, price: 142000,
     compatibility: ["Boeing 747-400", "Boeing 767-300"],
-    image: img("photo-1542296332-2e4473faf563"),
+    image: img("photo-1767719618628-4a1271ed8ef5"),
   },
   {
     id: "p9", partNumber: "ZOD-PAX-SEAT-22F", name: "Economy Passenger Seat 3-Abreast",
@@ -100,7 +100,7 @@ export const PARTS: Part[] = [
     category: "Cabin", manufacturer: "Zodiac Aerospace", condition: "Serviceable",
     quantity: 24, price: 3200,
     compatibility: ["Airbus A320", "Boeing 737"],
-    image: img("photo-1542296332-2e4473faf563"),
+    image: img("photo-1762960246763-dcb1e92b0b58"),
   },
   {
     id: "p10", partNumber: "EAT-FUEL-NOZ-V2500", name: "V2500 Fuel Nozzle Assembly",
@@ -108,7 +108,7 @@ export const PARTS: Part[] = [
     category: "Fuel System", manufacturer: "Eaton Aerospace", condition: "Overhauled",
     quantity: 14, price: 5600,
     compatibility: ["Airbus A320 (V2500)", "MD-90"],
-    image: img("photo-1597149961419-cdcd81fa8f78"),
+    image: img("photo-1704347824576-acd2e6c0c826"),
   },
   {
     id: "p11", partNumber: "TFE731-2C-IGN", name: "TFE731 Ignition Exciter Unit",
@@ -116,7 +116,7 @@ export const PARTS: Part[] = [
     category: "Electrical", manufacturer: "Honeywell", condition: "New",
     quantity: 9, price: 4180,
     compatibility: ["Learjet 35", "Hawker 800", "Falcon 50"],
-    image: img("photo-1559136555-9303baea8ebd"),
+    image: img("photo-1764304568191-172041e2e47c"),
   },
   {
     id: "p12", partNumber: "AMETEK-PITOT-7113", name: "Pitot-Static Probe Heated",
@@ -124,7 +124,7 @@ export const PARTS: Part[] = [
     category: "Avionics", manufacturer: "Ametek", condition: "New",
     quantity: 22, price: 2950,
     compatibility: ["Embraer E170", "Embraer E190"],
-    image: img("photo-1521587760476-6c12a4b040da"),
+    image: img("photo-1757858566618-2ee94d79a8d0"),
   },
   {
     id: "p13", partNumber: "A350-WLG-TIRE-46x18", name: "A350 Main Wheel Tire 46x18",
@@ -132,7 +132,7 @@ export const PARTS: Part[] = [
     category: "Landing Gear", manufacturer: "Michelin", condition: "New",
     quantity: 16, price: 6850,
     compatibility: ["Airbus A350-900", "Airbus A350-1000"],
-    image: img("photo-1474302770737-173ee21bab63"),
+    image: img("photo-1692128236180-8d27c7e0a1d4"),
   },
   {
     id: "p14", partNumber: "LIE-OXY-MASK-CC", name: "Crew Oxygen Mask Quick-Don",
@@ -148,7 +148,7 @@ export const PARTS: Part[] = [
     category: "Hydraulics", manufacturer: "Eaton Aerospace", condition: "Overhauled",
     quantity: 2, price: 11750,
     compatibility: ["Airbus A330-200", "Airbus A330-300"],
-    image: img("photo-1581093588401-fbb62a02f120"),
+    image: img("photo-1774449072065-d9593098466c"),
   },
   {
     id: "p16", partNumber: "ROC-BAT-NICAD-24V", name: "Aircraft Battery 24V NiCad",
@@ -156,7 +156,7 @@ export const PARTS: Part[] = [
     category: "Electrical", manufacturer: "Saft", condition: "New",
     quantity: 7, price: 3950,
     compatibility: ["Bombardier Q400", "ATR 72"],
-    image: img("photo-1605640840605-14ac1855827b"),
+    image: img("photo-1761813409441-5c157440ab98"),
   },
   {
     id: "p17", partNumber: "B777-CARGO-DR-ACT", name: "777 Cargo Door Actuator",
@@ -164,7 +164,7 @@ export const PARTS: Part[] = [
     category: "Airframe", manufacturer: "Moog Inc.", condition: "Overhauled",
     quantity: 3, price: 18900,
     compatibility: ["Boeing 777-200", "Boeing 777-300ER"],
-    image: img("photo-1436491865332-7a61a109cc05"),
+    image: img("photo-1742771420711-4c017207efa6"),
   },
   {
     id: "p18", partNumber: "PW1100G-FAN-HUB", name: "PW1100G Fan Hub Assembly",
@@ -172,6 +172,6 @@ export const PARTS: Part[] = [
     category: "Engine", manufacturer: "Pratt & Whitney", condition: "New",
     quantity: 1, price: 215000,
     compatibility: ["Airbus A320neo"],
-    image: img("photo-1569629743817-70d8db6c323b"),
+    image: img("photo-1765099504856-538f618eb9e1"),
   },
 ];

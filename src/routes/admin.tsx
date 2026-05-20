@@ -70,7 +70,7 @@ function Admin() {
                   quantity: Number(fd.get("quantity") || 0),
                   price: Number(fd.get("price") || 0),
                   compatibility: [],
-                  image: "https://images.unsplash.com/photo-1569629743817-70d8db6c323b?auto=format&fit=crop&w=600&q=70",
+                  image: "https://images.unsplash.com/photo-1643590161306-65599acaaea0?auto=format&fit=crop&w=600&q=70",
                 };
                 setParts((p) => [next, ...p]);
                 (e.currentTarget as HTMLFormElement).reset();
