@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as InventoryRouteImport } from './routes/inventory'
 import { Route as EnquiriesRouteImport } from './routes/enquiries'
+import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as PartsPartIdRouteImport } from './routes/parts.$partId'
@@ -23,6 +24,11 @@ const InventoryRoute = InventoryRouteImport.update({
 const EnquiriesRoute = EnquiriesRouteImport.update({
   id: '/enquiries',
   path: '/enquiries',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AdminRoute = AdminRouteImport.update({
@@ -44,6 +50,7 @@ const PartsPartIdRoute = PartsPartIdRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/admin': typeof AdminRoute
+  '/contact': typeof ContactRoute
   '/enquiries': typeof EnquiriesRoute
   '/inventory': typeof InventoryRoute
   '/parts/$partId': typeof PartsPartIdRoute
@@ -51,6 +58,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/admin': typeof AdminRoute
+  '/contact': typeof ContactRoute
   '/enquiries': typeof EnquiriesRoute
   '/inventory': typeof InventoryRoute
   '/parts/$partId': typeof PartsPartIdRoute
@@ -59,19 +67,33 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/admin': typeof AdminRoute
+  '/contact': typeof ContactRoute
   '/enquiries': typeof EnquiriesRoute
   '/inventory': typeof InventoryRoute
   '/parts/$partId': typeof PartsPartIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/admin' | '/enquiries' | '/inventory' | '/parts/$partId'
+  fullPaths:
+    | '/'
+    | '/admin'
+    | '/contact'
+    | '/enquiries'
+    | '/inventory'
+    | '/parts/$partId'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/admin' | '/enquiries' | '/inventory' | '/parts/$partId'
+  to:
+    | '/'
+    | '/admin'
+    | '/contact'
+    | '/enquiries'
+    | '/inventory'
+    | '/parts/$partId'
   id:
     | '__root__'
     | '/'
     | '/admin'
+    | '/contact'
     | '/enquiries'
     | '/inventory'
     | '/parts/$partId'
@@ -80,6 +102,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AdminRoute: typeof AdminRoute
+  ContactRoute: typeof ContactRoute
   EnquiriesRoute: typeof EnquiriesRoute
   InventoryRoute: typeof InventoryRoute
   PartsPartIdRoute: typeof PartsPartIdRoute
@@ -99,6 +122,13 @@ declare module '@tanstack/react-router' {
       path: '/enquiries'
       fullPath: '/enquiries'
       preLoaderRoute: typeof EnquiriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/admin': {
@@ -128,6 +158,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AdminRoute: AdminRoute,
+  ContactRoute: ContactRoute,
   EnquiriesRoute: EnquiriesRoute,
   InventoryRoute: InventoryRoute,
   PartsPartIdRoute: PartsPartIdRoute,
