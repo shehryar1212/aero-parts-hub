@@ -62,7 +62,7 @@ function PartDetail() {
             <div className="col-span-2">
               <dt className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Compatibility</dt>
               <dd className="mt-2 flex flex-wrap gap-2">
-                {part.compatibility.map((c) => (
+                {part.compatibility.map((c: string) => (
                   <span key={c} className="inline-flex items-center gap-1.5 rounded-md bg-secondary px-2.5 py-1 text-xs">
                     <CheckCircle2 className="h-3 w-3 text-accent" /> {c}
                   </span>
